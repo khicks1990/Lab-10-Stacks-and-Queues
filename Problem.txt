@@ -1,0 +1,18 @@
+A file has genealogy data for a collection of N people. The first line of the file contains the integer N followed by N additional lines of data. Each of these additional lines specifies a list of children for a single person. The line starts with the name of the person, followed by the number of that person’s children, followed by the names of the children. Here is an example of a file specifying genealogy information for 10 people.
+
+10
+Al 3 Beth Carol Dino
+Beth 1 Pablo
+Carol 3 Ben Alex Mary
+Dino 0
+Pablo 2 Angela Miguel
+Ben 0
+Alex 0
+Mary 0
+Angela 0
+Miguel 0
+
+For example, Al has three children named Beth, Carol, and Dino; Beth has one child named Pablo; and Dino has no children. You may assume that all names are unique.
+Write a program which reads a file of genealogy information and then allows the user to enter pairs of names X and Y. The program then determines whether Y is a descendant of X, and if so, prints a list of names beginning with X and ending with Y, such that each person in the chain is a child of person preceding them on the list. Otherwise, the program states that Y is not a descendant of X.
+
+Implement findPath() starting on line 73 of Main.java
